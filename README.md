@@ -2,6 +2,8 @@
 
 ## Example/Screenshots
 
+[Example Site](http://rvillars.github.io/chell-widget/example/example1.html)
+
 ## Installation
 
 Just the common clientside javascript procedure:
