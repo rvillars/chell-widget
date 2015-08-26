@@ -1,0 +1,57 @@
+<h3 class="panel-title">
+    {{definition.title}}
+    <span class="pull-right">
+        <a href="" title="reload widget content" ng-if="widget.reload" ng-click="reload()">
+            <i class="glyphicon glyphicon-refresh"></i>
+        </a>
+        <!-- change widget location -->
+        <a href="" title="change widget location" class="widget-move" ng-if="editMode">
+            <i class="glyphicon glyphicon-move"></i>
+        </a>
+        <!-- open edit mode -->
+        <a href="" title="edit widget configuration" ng-click="edit()" ng-if="editMode">
+            <i class="glyphicon glyphicon-cog"></i>
+        </a>
+        <!-- Borderless -->
+        <a href="" title="borderless widget"
+           ng-show="options.maximizable && !widgetState.isFullscreen && !widgetState.isCollapsed && !config.borderless"
+           ng-if="editMode"
+           ng-click="config.borderless = true">
+            <i class="glyphicon glyphicon-retweet"></i>
+        </a>
+        <a href="" title="borderless widget"
+           ng-show="options.maximizable && !widgetState.isFullscreen && !widgetState.isCollapsed && config.borderless"
+           ng-if="editMode"
+           ng-click="config.borderless = false">
+            <i class="glyphicon glyphicon-retweet text-muted"></i>
+        </a>
+        <!-- fullscreen -->
+        <a href="" title="fullscreen widget"
+           ng-show="options.maximizable && !widgetState.isFullscreen && !widgetState.isCollapsed"
+           ng-if="!editMode"
+           ng-click="widgetState.isFullscreen = !widgetState.isFullscreen">
+            <i class="glyphicon glyphicon-fullscreen"></i>
+        </a>
+        <!-- normal -->
+        <a href="" title="normal widget" ng-show="options.maximizable && widgetState.isFullscreen"
+           ng-click="widgetState.isFullscreen = !widgetState.isFullscreen">
+            <i class="glyphicon glyphicon-resize-small"></i>
+        </a>
+        <!-- collapse -->
+        <a href="" title="collapse widget"
+           ng-show="options.collapsible && !widgetState.isCollapsed && !widgetState.isFullscreen"
+           ng-if="!editMode"
+           ng-click="widgetState.isCollapsed = !widgetState.isCollapsed">
+            <i class="glyphicon glyphicon-minus"></i>
+        </a>
+        <!-- expand -->
+        <a href="" title="expand widget" ng-show="options.collapsible && widgetState.isCollapsed"
+           ng-click="widgetState.isCollapsed = !widgetState.isCollapsed">
+            <i class="glyphicon glyphicon-plus"></i>
+        </a>
+        <!-- remove widget -->
+        <a href="" title="remove widget" ng-click="close()" ng-if="editMode">
+            <i class="glyphicon glyphicon-remove"></i>
+        </a>
+    </span>
+</h3>

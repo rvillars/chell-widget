@@ -1,0 +1,36 @@
+{
+  "name": "chell-widget",
+  "version": "0.0.1",
+  "main": [
+    "chell-widget.js",
+    "styles/chell-widget.css"
+  ],
+  "dependencies": {
+    "jquery": "~2.1",
+    "angular": "~1.3",
+    "angular-resource": "~1.3",
+    "angular-mocks": "~1.3",
+    "underscore": "~1.6",
+    "bootstrap": "~3.1",
+    "angular-underscore-module": "",
+    "angular-underscore": "",
+    "angular-bootstrap": "~0.11.0",
+    "angular-translate": "~2.2.0",
+    "angular-local-storage": "0.1.5",
+    "Sortable": "1.1.1"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "assets",
+    "build",
+    "src",
+    "tests",
+    "examples",
+    ".travis.yml",
+    ".gitignore",
+    ".bowerrc",
+    "build.config.js",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="chell-widget-example1">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>chell-widget Example 1</title>
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="../bower-components/bootstrap/dist/css/bootstrap.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="../bower-components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../bower-components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-mocks/angular-mocks.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="../bower-components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-underscore-module/angular-underscore-module.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-underscore/angular-underscore.js"></script>
+    <script type="text/javascript" src="../bower-components/angular-translate/angular-translate.js"></script>
+    <script type="text/javascript" src="../bower-components/Sortable/Sortable.js"></script>
+
+    <script type="text/javascript" src="../chell-widget.js"></script>
+    <script type="text/javascript" src="../adapters/MockWidgetAdapter.js"></script>
+    <script type="text/javascript" src="../adapters/MockWidgetMock.js"></script>
+    <script type="text/javascript" src="example1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styles/chell-widget.css" />
+
+</head>
+<body>
+<div style="margin: 50px" ng-controller="ExampleWidgetController">
+
+    <widget-dashboard name="{{name}}" collapsible="{{collapsible}}" maximizable="{{maximizable}}" structure="6-6" widget-model="model" />
+
+</div>
+</body>
+</html>

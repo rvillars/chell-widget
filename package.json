@@ -1,0 +1,26 @@
+{
+    "name": "chell-widget",
+    "version": "0.0.1",
+    "author": "Roger Villars",
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-less": "~0.11.0",
+        "grunt-contrib-clean": "^0.4.1",
+        "grunt-contrib-copy": "^0.4.1",
+        "grunt-contrib-jshint": "~0.10",
+        "grunt-contrib-concat": "^0.3.0",
+        "grunt-contrib-watch": "^0.4.4",
+        "grunt-contrib-uglify": "^0.5.0",
+        "grunt-html2js": "^0.1.9",
+        "grunt-ngmin": "0.0.2",
+        "karma": "~0.12",
+        "karma-jasmine": "^0.1.5",
+        "phantomjs": "~1.9",
+        "karma-phantomjs-launcher": "^0.1.4",
+        "grunt-karma": "~0.8.3",
+        "grunt-angular-translate": "~0.2.13",
+        "public": "git+https://git@github.com/rvillars/grunt-json-angular-translate.git"
+    },
+    "private": true
+}

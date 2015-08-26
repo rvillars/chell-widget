@@ -1,0 +1,12 @@
+<div widget-id="{{definition.wid}}" widget-type="{{definition.type}}"
+     ng-class="{'widget-fullscreen': widgetState.isFullscreen, 'widget-borderless': config.borderless, 'view-mode': !editMode}"
+     class="widget panel panel-default">
+    <div class="panel-heading clearfix">
+        <div ng-include src="definition.titleTemplateUrl"></div>
+    </div>
+    <div class="panel-body" collapse="widgetState.isCollapsed">
+        <div style="height: {{widgetState.isFullscreen ? '100%' : definition.height}};">
+            <widget-content model="definition" content="widget"/>
+        </div>
+    </div>
+</div>
