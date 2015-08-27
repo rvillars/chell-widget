@@ -444,9 +444,6 @@ chellWidget.directive('widgetDashboard', [
                 }
               }
               if (model) {
-                if (!model.title) {
-                  model.title = 'Dashboard';
-                }
                 if (!model.titleTemplateUrl) {
                   model.titleTemplateUrl = 'templates/dashboard-title.tpl.html';
                 }
