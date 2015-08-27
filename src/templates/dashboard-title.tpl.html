@@ -1,5 +1,4 @@
-<h1>
-    {{model.title}}
+<div>
     <span style="font-size: 16px" class="pull-right">
         <a href="" ng-if="editMode" title="add new widget" ng-click="addWidgetDialog()">
             <i class="glyphicon glyphicon-plus-sign"></i>
@@ -18,5 +17,8 @@
             <i class="glyphicon glyphicon-remove widget-flip"></i>
         </a>
     </span>
-</h1>
+</div>
+<h3 style="min-height: 12px">
+    {{model.title}}
+</h3>
 

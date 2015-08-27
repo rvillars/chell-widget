@@ -1027,8 +1027,7 @@ angular.module("templates/dashboard-row.tpl.html", []).run(["$templateCache", fu
 
 angular.module("templates/dashboard-title.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/dashboard-title.tpl.html",
-    "<h1>\n" +
-    "    {{model.title}}\n" +
+    "<div>\n" +
     "    <span style=\"font-size: 16px\" class=\"pull-right\">\n" +
     "        <a href=\"\" ng-if=\"editMode\" title=\"add new widget\" ng-click=\"addWidgetDialog()\">\n" +
     "            <i class=\"glyphicon glyphicon-plus-sign\"></i>\n" +
@@ -1047,7 +1046,10 @@ angular.module("templates/dashboard-title.tpl.html", []).run(["$templateCache", 
     "            <i class=\"glyphicon glyphicon-remove widget-flip\"></i>\n" +
     "        </a>\n" +
     "    </span>\n" +
-    "</h1>\n" +
+    "</div>\n" +
+    "<h3 style=\"min-height: 12px\">\n" +
+    "    {{model.title}}\n" +
+    "</h3>\n" +
     "\n" +
     "");
 }]);
