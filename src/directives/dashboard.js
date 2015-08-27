@@ -2,7 +2,7 @@
 
 var chellWidget = angular.module('chell-widget');
 
-chellWidget.directive('widgetDashboard', function ($rootScope, $log, $modal, dashboard) {
+chellWidget.directive('chellWidgetDashboard', function ($rootScope, $log, $modal, dashboard) {
 
     function stringToBoolean(string) {
         switch (angular.isDefined(string) ? string.toLowerCase() : null) {

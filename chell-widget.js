@@ -288,7 +288,7 @@ chellWidget.directive('widgetDashboardColumn', [
   }
 ]);;// Source: build/directives/dashboard.js
 var chellWidget = angular.module('chell-widget');
-chellWidget.directive('widgetDashboard', [
+chellWidget.directive('chellWidgetDashboard', [
   '$rootScope',
   '$log',
   '$modal',
