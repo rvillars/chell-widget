@@ -94,7 +94,7 @@ iframe {
 .glyphicon {
   font-size: 12px;
 }
-.col-xs-1,
+.widget > .col-xs-1,
 .col-sm-1,
 .col-md-1,
 .col-lg-1,
@@ -142,5 +142,5 @@ iframe {
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-  padding: 10px;
+  padding: 0px 10px;
 }
