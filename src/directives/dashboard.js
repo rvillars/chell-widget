@@ -200,7 +200,7 @@ chellWidget.directive('widgetDashboard', function ($rootScope, $log, $modal, das
 
                     if (model) {
                         if (!model.title) {
-                            model.title = 'Dashboard';
+                            model.title = '\u00A0';
                         }
                         if (!model.titleTemplateUrl) {
                             model.titleTemplateUrl = 'templates/dashboard-title.tpl.html';
