@@ -444,6 +444,9 @@ chellWidget.directive('widgetDashboard', [
                 }
               }
               if (model) {
+                if (!model.title) {
+                  model.title = 'Dashboard';
+                }
                 if (!model.titleTemplateUrl) {
                   model.titleTemplateUrl = 'templates/dashboard-title.tpl.html';
                 }
@@ -1027,29 +1030,27 @@ angular.module("templates/dashboard-row.tpl.html", []).run(["$templateCache", fu
 
 angular.module("templates/dashboard-title.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/dashboard-title.tpl.html",
-    "<div>\n" +
-    "    <span style=\"font-size: 16px\" class=\"pull-right\">\n" +
-    "        <a href=\"\" ng-if=\"editMode\" title=\"add new widget\" ng-click=\"addWidgetDialog()\">\n" +
-    "            <i class=\"glyphicon glyphicon-plus-sign\"></i>\n" +
-    "        </a>\n" +
-    "        <a href=\"\" ng-if=\"editMode\" title=\"edit dashboard\" ng-click=\"editDashboardDialog()\">\n" +
-    "            <i class=\"glyphicon glyphicon-cog\"></i>\n" +
-    "        </a>\n" +
-    "        <a href=\"\" ng-if=\"editMode\" title=\"reset dashboard\" ng-click=\"resetDashboard()\">\n" +
-    "            <i class=\"glyphicon glyphicon-repeat\"></i>\n" +
-    "        </a>\n" +
-    "        <a href=\"\" ng-if=\"options.editable\" title=\"{{editMode ? 'save changes' : 'enable edit mode'}}\"\n" +
-    "           ng-click=\"toggleEditMode()\">\n" +
-    "            <i class=\"glyphicon\" x-ng-class=\"{'glyphicon-edit' : !editMode, 'glyphicon-ok' : editMode}\"></i>\n" +
-    "        </a>\n" +
-    "        <a href=\"\" ng-if=\"editMode\" title=\"undo changes\" ng-click=\"cancelEditMode()\">\n" +
-    "            <i class=\"glyphicon glyphicon-remove widget-flip\"></i>\n" +
-    "        </a>\n" +
-    "    </span>\n" +
+    "<div style=\"font-size: 16px;\" class=\"pull-right\">\n" +
+    "    <a href=\"\" ng-if=\"editMode\" title=\"add new widget\" ng-click=\"addWidgetDialog()\">\n" +
+    "        <i class=\"glyphicon glyphicon-plus-sign\"></i>\n" +
+    "    </a>\n" +
+    "    <a href=\"\" ng-if=\"editMode\" title=\"edit dashboard\" ng-click=\"editDashboardDialog()\">\n" +
+    "        <i class=\"glyphicon glyphicon-cog\"></i>\n" +
+    "    </a>\n" +
+    "    <a href=\"\" ng-if=\"editMode\" title=\"reset dashboard\" ng-click=\"resetDashboard()\">\n" +
+    "        <i class=\"glyphicon glyphicon-repeat\"></i>\n" +
+    "    </a>\n" +
+    "    <a href=\"\" ng-if=\"options.editable\" title=\"{{editMode ? 'save changes' : 'enable edit mode'}}\"\n" +
+    "       ng-click=\"toggleEditMode()\">\n" +
+    "        <i class=\"glyphicon\" x-ng-class=\"{'glyphicon-edit' : !editMode, 'glyphicon-ok' : editMode}\"></i>\n" +
+    "    </a>\n" +
+    "    <a href=\"\" ng-if=\"editMode\" title=\"undo changes\" ng-click=\"cancelEditMode()\">\n" +
+    "        <i class=\"glyphicon glyphicon-remove widget-flip\"></i>\n" +
+    "    </a>\n" +
     "</div>\n" +
-    "<h3 style=\"min-height: 12px\">\n" +
+    "<h4>\n" +
     "    {{model.title}}\n" +
-    "</h3>\n" +
+    "</h4>\n" +
     "\n" +
     "");
 }]);

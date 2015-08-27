@@ -1,24 +1,22 @@
-<div>
-    <span style="font-size: 16px" class="pull-right">
-        <a href="" ng-if="editMode" title="add new widget" ng-click="addWidgetDialog()">
-            <i class="glyphicon glyphicon-plus-sign"></i>
-        </a>
-        <a href="" ng-if="editMode" title="edit dashboard" ng-click="editDashboardDialog()">
-            <i class="glyphicon glyphicon-cog"></i>
-        </a>
-        <a href="" ng-if="editMode" title="reset dashboard" ng-click="resetDashboard()">
-            <i class="glyphicon glyphicon-repeat"></i>
-        </a>
-        <a href="" ng-if="options.editable" title="{{editMode ? 'save changes' : 'enable edit mode'}}"
-           ng-click="toggleEditMode()">
-            <i class="glyphicon" x-ng-class="{'glyphicon-edit' : !editMode, 'glyphicon-ok' : editMode}"></i>
-        </a>
-        <a href="" ng-if="editMode" title="undo changes" ng-click="cancelEditMode()">
-            <i class="glyphicon glyphicon-remove widget-flip"></i>
-        </a>
-    </span>
+<div style="font-size: 16px;" class="pull-right">
+    <a href="" ng-if="editMode" title="add new widget" ng-click="addWidgetDialog()">
+        <i class="glyphicon glyphicon-plus-sign"></i>
+    </a>
+    <a href="" ng-if="editMode" title="edit dashboard" ng-click="editDashboardDialog()">
+        <i class="glyphicon glyphicon-cog"></i>
+    </a>
+    <a href="" ng-if="editMode" title="reset dashboard" ng-click="resetDashboard()">
+        <i class="glyphicon glyphicon-repeat"></i>
+    </a>
+    <a href="" ng-if="options.editable" title="{{editMode ? 'save changes' : 'enable edit mode'}}"
+       ng-click="toggleEditMode()">
+        <i class="glyphicon" x-ng-class="{'glyphicon-edit' : !editMode, 'glyphicon-ok' : editMode}"></i>
+    </a>
+    <a href="" ng-if="editMode" title="undo changes" ng-click="cancelEditMode()">
+        <i class="glyphicon glyphicon-remove widget-flip"></i>
+    </a>
 </div>
-<h3 style="min-height: 12px">
+<h4>
     {{model.title}}
-</h3>
+</h4>
 
