@@ -2,7 +2,7 @@
 
 ## Example/Screenshots
 
-[Example Site](http://rvillars.github.io/chell-widget/example/example1.html)
+[Example Site](https://rawgit.com/rvillars/chell-widget/master/examples/example1.html)
 
 ## Installation
 
