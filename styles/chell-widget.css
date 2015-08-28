@@ -74,7 +74,7 @@ pre.edit {
   padding: 7px 10px;
   font-size: 14px;
 }
-.widget > h3 {
+.widget h3 {
   line-height: 17px;
 }
 .view-mode.widget.widget-borderless > .panel-heading {
